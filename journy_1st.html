@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Tools for Engineering Students</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --accent: #14b8a6;
+      --background: #f9fafb;
+      --card-bg: #ffffff;
+      --text-dark: #1e293b;
+      --text-light: #f1f5f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: var(--text-light);
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #312e81;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .tool-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .tool-card h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    .tool-card p {
+      margin-bottom: 1rem;
+    }
+
+    .tool-card a {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .tool-card a:hover {
+      background-color: var(--accent);
+    }
+
+    .cta {
+      background-color: var(--secondary);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 3rem;
+    }
+
+    .cta h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #1e1b4b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Tools for Engineering Students</h1>
+    <p>Boost your engineering journey with the smartest free AI tools for coding, research, and simulations.</p>
+  </header>
+
+  <nav>
+    <a href="#coding">Coding Help</a>
+    <a href="#simulation">Simulations</a>
+    <a href="#research">Research</a>
+    <a href="#productivity">Productivity</a>
+    <a href="#presentations">Presentations</a>
+  </nav>
+
+  <div class="container">
+    <!-- Coding Help -->
+    <div class="tool-card" id="coding">
+      <h2>ChatGPT (Coding Assistant)</h2>
+      <p>Get step-by-step coding help in C, Python, MATLAB, and electronics.</p>
+      <a href="https://chat.openai.com/" target="_blank">Try ChatGPT</a>
+    </div>
+
+    <div class="tool-card">
+      <h2>Replit AI</h2>
+      <p>Collaborate and code in real-time with AI debugging and suggestions.</p>
+      <a href="https://replit.com/" target="_blank">Try Replit AI</a>
+    </div>
+
+    <!-- Simulations -->
+    <div class="tool-card" id="simulation">
+      <h2>Falstad Circuit Simulator</h2>
+      <p>Simulate electrical circuits with easy drag-and-drop components and live visuals.</p>
+      <a href="https://www.falstad.com/circuit/" target="_blank">Try Circuit Simulator</a>
+    </div>
+
+    <div class="tool-card">
+      <h2>MATLAB Online</h2>
+      <p>Run engineering simulations and solve complex equations using MATLAB in the cloud.</p>
+      <a href="https://matlab.mathworks.com/" target="_blank">Try MATLAB Online</a>
+    </div>
+
+    <!-- Research -->
+    <div class="tool-card" id="research">
+      <h2>Scite</h2>
+      <p>Find and cite relevant research papers with AI-powered insights.</p>
+      <a href="https://scite.ai/" target="_blank">Try Scite</a>
+    </div>
+
+    <div class="tool-card">
+      <h2>Explainpaper</h2>
+      <p>Upload technical papers and let AI explain them in simple terms for better understanding.</p>
+      <a href="https://www.explainpaper.com/" target="_blank">Try Explainpaper</a>
+    </div>
+
+    <!-- Productivity -->
+    <div class="tool-card" id="productivity">
+      <h2>Notion AI</h2>
+      <p>Organize project notes, to-dos, and generate smart summaries with AI in Notion.</p>
+      <a href="https://www.notion.so/product/ai" target="_blank">Try Notion AI</a>
+    </div>
+
+    <div class="tool-card">
+      <h2>ChatPDF</h2>
+      <p>Upload textbooks or manuals and ask questions directly to the AI.</p>
+      <a href="https://www.chatpdf.com/" target="_blank">Try ChatPDF</a>
+    </div>
+
+    <!-- Presentations -->
+    <div class="tool-card" id="presentations">
+      <h2>Gamma</h2>
+      <p>Turn your content into stunning AI-generated engineering presentations.</p>
+      <a href="https://gamma.app/" target="_blank">Try Gamma</a>
+    </div>
+
+    <div class="tool-card">
+      <h2>Canva (Engineering Templates)</h2>
+      <p>Create diagrams, posters, and technical slides using AI-powered tools.</p>
+      <a href="https://www.canva.com/" target="_blank">Try Canva</a>
+    </div>
+
+    <div class="cta">
+      <h2>🚀 Stay Ahead in Engineering</h2>
+      <p>Bookmark this page – new AI tools for engineering students are added regularly!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AI Tools for Engineering Students. Learn Smart. Work Smart.</p>
+  </footer>
+</body>
+</html>
